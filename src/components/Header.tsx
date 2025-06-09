@@ -32,6 +32,12 @@ const Header: React.FC = () => {
               Главная
             </Link>
             <BrandDropdown />
+            <Link
+              to="/catalog"
+              className="text-black hover:text-[#e71a00] transition-colors"
+            >
+              Каталог
+            </Link>
             {isAuthenticated && (
               <>
                 <Link
