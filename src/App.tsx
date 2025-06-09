@@ -14,6 +14,7 @@ import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
+import Brand from "./pages/Brand";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
                   <Routes>
                     <Route path="/" element={<Index />} />
                     <Route path="/brands" element={<Brands />} />
+                    <Route path="/brands/:brandSlug" element={<Brand />} />
                     <Route path="/catalog" element={<Catalog />} />
                     <Route path="/cart" element={<Cart />} />
                     <Route path="/profile" element={<Profile />} />

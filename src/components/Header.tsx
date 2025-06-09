@@ -4,6 +4,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useCart } from "@/contexts/CartContext";
 import Icon from "@/components/ui/icon";
 import { Button } from "@/components/ui/button";
+import BrandDropdown from "@/components/BrandDropdown";
 
 const Header: React.FC = () => {
   const { isAuthenticated, user, logout } = useAuth();
@@ -30,12 +31,7 @@ const Header: React.FC = () => {
             >
               Главная
             </Link>
-            <Link
-              to="/brands"
-              className="text-black hover:text-[#e71a00] transition-colors"
-            >
-              Бренды
-            </Link>
+            <BrandDropdown />
             {isAuthenticated && (
               <>
                 <Link
