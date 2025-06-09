@@ -131,14 +131,16 @@ const Catalog: React.FC = () => {
       className={`min-h-screen ${containerClass} transition-colors duration-300`}
     >
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8 text-black">
-          Каталог товаров
+        <h1 className="text-4xl font-bold text-center mb-8 text-gray-900">
+          Каталог очков
         </h1>
 
         <div className="grid lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1">
-            <div className="bg-white p-6 rounded-lg shadow-sm border">
-              <h2 className="text-xl font-semibold mb-4">Фильтры</h2>
+            <div className="bg-white p-6 rounded-lg shadow-md border">
+              <h2 className="text-xl font-semibold mb-4 text-gray-800">
+                Фильтры
+              </h2>
 
               <div className="space-y-4">
                 <div>
