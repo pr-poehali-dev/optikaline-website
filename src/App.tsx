@@ -8,6 +8,10 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 import { CartProvider } from "@/contexts/CartContext";
 import Header from "@/components/Header";
 import Index from "./pages/Index";
+import Brands from "./pages/Brands";
+import Catalog from "./pages/Catalog";
+import Cart from "./pages/Cart";
+import Profile from "./pages/Profile";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
 import NotFound from "./pages/NotFound";
@@ -28,6 +32,10 @@ const App = () => (
                 <main>
                   <Routes>
                     <Route path="/" element={<Index />} />
+                    <Route path="/brands" element={<Brands />} />
+                    <Route path="/catalog" element={<Catalog />} />
+                    <Route path="/cart" element={<Cart />} />
+                    <Route path="/profile" element={<Profile />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
