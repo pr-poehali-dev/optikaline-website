@@ -101,10 +101,28 @@ const Brand: React.FC = () => {
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="text-center space-y-4">
+            <div className="grid md:grid-cols-2 gap-4 max-w-lg mx-auto">
+              <Link to={`/catalog?type=sunglasses&brand=${brandSlug}`}>
+                <Button className="bg-[#e71a00] hover:bg-[#c41600] text-white w-full">
+                  Заказать С/З
+                </Button>
+              </Link>
+              <Link to={`/catalog?type=medical&brand=${brandSlug}`}>
+                <Button
+                  variant="outline"
+                  className="w-full border-[#e71a00] text-[#e71a00] hover:bg-[#e71a00] hover:text-white"
+                >
+                  Заказать Мед. оптику
+                </Button>
+              </Link>
+            </div>
             <Link to={`/catalog?brand=${brandSlug}`}>
-              <Button className="bg-[#e71a00] hover:bg-[#c41600] text-white px-8 py-3 text-lg">
-                Смотреть каталог {brand.name}
+              <Button
+                variant="outline"
+                className="text-gray-600 hover:text-[#e71a00]"
+              >
+                Смотреть все товары {brand.name}
                 <Icon name="ArrowRight" size={20} className="ml-2" />
               </Button>
             </Link>

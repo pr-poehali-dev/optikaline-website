@@ -35,12 +35,6 @@ const Header: React.FC = () => {
             {isAuthenticated && (
               <>
                 <Link
-                  to="/catalog"
-                  className="text-black hover:text-[#e71a00] transition-colors"
-                >
-                  Каталог
-                </Link>
-                <Link
                   to="/cart"
                   className="relative text-black hover:text-[#e71a00] transition-colors"
                 >

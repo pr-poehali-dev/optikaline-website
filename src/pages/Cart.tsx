@@ -62,9 +62,11 @@ const Cart: React.FC = () => {
               className="mx-auto text-gray-400 mb-4"
             />
             <p className="text-xl text-gray-600 mb-4">Ваша корзина пуста</p>
-            <Button className="bg-[#e71a00] hover:bg-[#c41600]">
-              Перейти к покупкам
-            </Button>
+            <Link to="/catalog">
+              <Button className="bg-[#e71a00] hover:bg-[#c41600]">
+                Перейти к покупкам
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
